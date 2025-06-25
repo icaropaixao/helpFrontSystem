@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/angular",
+      "config": {
+        "build": "export NODE_OPTIONS=--openssl-legacy-provider && ng build"
+      }
+    }
+  ]
+}
